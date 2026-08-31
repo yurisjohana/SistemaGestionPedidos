@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Inventario - Sistema de Gestión de Pedidos</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1>Sistema de Gestión de Pedidos</h1>
+        <nav>
+            <a href="index.html">Inicio</a>
+            <a href="productos.html">Productos</a>
+            <a href="pedidos.html">Pedidos</a>
+            <a href="clientes.html">Clientes</a>
+            <a class="activo" href="inventario.html">Inventario</a>
+        </nav>
+    </header>
+    <main class="contenedor">
+        <section class="tarjeta">
+            <h2>Inventario</h2>
+            <p>Control básico de cantidades disponibles.</p>
+            <table>
+                <thead><tr><th>Producto</th><th>Cantidad</th><th>Estado</th></tr></thead>
+                <tbody>
+                    <tr><td>Arroz 1 kg</td><td>18</td><td>Disponible</td></tr>
+                    <tr><td>Leche 1 L</td><td>12</td><td>Disponible</td></tr>
+                    <tr><td>Huevos x 12</td><td>6</td><td class="estado-bajo">Stock bajo</td></tr>
+                </tbody>
+            </table>
+        </section>
+    </main>
+    <footer><p>Proyecto formativo ADSO - SENA</p></footer>
+</body>
+</html>

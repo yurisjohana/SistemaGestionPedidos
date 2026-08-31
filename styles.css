@@ -1,0 +1,140 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background: #f4f6f8;
+    color: #222;
+}
+
+header {
+    background: #1f5f3f;
+    color: white;
+    padding: 20px;
+}
+
+header h1 {
+    margin: 0 0 14px;
+    font-size: 26px;
+}
+
+nav {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    padding: 8px 12px;
+    border-radius: 6px;
+}
+
+nav a:hover,
+nav a.activo {
+    background: rgba(255, 255, 255, 0.18);
+}
+
+.contenedor {
+    width: min(1000px, 92%);
+    margin: 30px auto;
+}
+
+.tarjeta {
+    background: white;
+    border-radius: 10px;
+    padding: 24px;
+    margin-bottom: 20px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
+}
+
+.login {
+    max-width: 520px;
+}
+
+form {
+    display: grid;
+    gap: 10px;
+}
+
+input,
+select,
+button {
+    width: 100%;
+    padding: 11px;
+    border-radius: 6px;
+    border: 1px solid #c8cdd2;
+    font-size: 15px;
+}
+
+button {
+    border: none;
+    background: #1f5f3f;
+    color: white;
+    cursor: pointer;
+    font-weight: bold;
+}
+
+button:hover {
+    background: #174a31;
+}
+
+.modulos {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+    gap: 12px;
+}
+
+.modulos a {
+    padding: 18px;
+    border: 1px solid #d8dde2;
+    border-radius: 8px;
+    color: #1f5f3f;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 16px;
+}
+
+th,
+td {
+    border: 1px solid #d8dde2;
+    padding: 10px;
+    text-align: left;
+}
+
+th {
+    background: #eef4f0;
+}
+
+.mensaje {
+    min-height: 20px;
+    font-weight: bold;
+}
+
+.estado-bajo {
+    font-weight: bold;
+}
+
+footer {
+    text-align: center;
+    padding: 20px;
+    color: #555;
+}
+
+@media (max-width: 600px) {
+    header h1 {
+        font-size: 21px;
+    }
+
+    nav {
+        flex-direction: column;
+    }
+}

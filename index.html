@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sistema de Gestión de Pedidos</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1>Sistema de Gestión de Pedidos</h1>
+        <nav>
+            <a class="activo" href="index.html">Inicio</a>
+            <a href="productos.html">Productos</a>
+            <a href="pedidos.html">Pedidos</a>
+            <a href="clientes.html">Clientes</a>
+            <a href="inventario.html">Inventario</a>
+        </nav>
+    </header>
+
+    <main class="contenedor">
+        <section class="tarjeta login">
+            <h2>Inicio de sesión</h2>
+            <p>Ingresa con tu usuario o correo para acceder al sistema.</p>
+
+            <form id="formLogin">
+                <label for="correo">Usuario o correo</label>
+                <input id="correo" type="email" placeholder="usuario@correo.com" required>
+
+                <label for="contrasena">Contraseña</label>
+                <input id="contrasena" type="password" placeholder="Contraseña" required>
+
+                <button type="submit">Entrar</button>
+            </form>
+            <p id="mensajeLogin" class="mensaje" aria-live="polite"></p>
+        </section>
+
+        <section class="tarjeta">
+            <h2>Módulos del sistema</h2>
+            <div class="modulos">
+                <a href="pedidos.html">Gestionar pedidos</a>
+                <a href="productos.html">Consultar productos</a>
+                <a href="clientes.html">Gestionar clientes</a>
+                <a href="inventario.html">Controlar inventario</a>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>Proyecto formativo ADSO - SENA</p>
+    </footer>
+    <script src="app.js"></script>
+</body>
+</html>

@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pedidos - Sistema de Gestión de Pedidos</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1>Sistema de Gestión de Pedidos</h1>
+        <nav>
+            <a href="index.html">Inicio</a>
+            <a href="productos.html">Productos</a>
+            <a class="activo" href="pedidos.html">Pedidos</a>
+            <a href="clientes.html">Clientes</a>
+            <a href="inventario.html">Inventario</a>
+        </nav>
+    </header>
+    <main class="contenedor">
+        <section class="tarjeta login">
+            <h2>Nuevo pedido</h2>
+            <form id="formPedido">
+                <label for="cliente">Cliente</label>
+                <input id="cliente" type="text" placeholder="Nombre del cliente" required>
+
+                <label for="producto">Producto</label>
+                <select id="producto" required>
+                    <option value="">Seleccione</option>
+                    <option value="Arroz 1 kg">Arroz 1 kg</option>
+                    <option value="Leche 1 L">Leche 1 L</option>
+                    <option value="Huevos x 12">Huevos x 12</option>
+                </select>
+
+                <label for="cantidad">Cantidad</label>
+                <input id="cantidad" type="number" min="1" placeholder="Cantidad" required>
+
+                <button type="submit">Crear pedido</button>
+            </form>
+            <p id="mensajePedido" class="mensaje" aria-live="polite"></p>
+        </section>
+    </main>
+    <footer><p>Proyecto formativo ADSO - SENA</p></footer>
+    <script src="app.js"></script>
+</body>
+</html>
